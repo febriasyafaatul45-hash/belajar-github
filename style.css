@@ -1,0 +1,171 @@
+/* Styling Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0984e3, #6c5ce7);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Animasi Kartu Utama */
+.card-biodata {
+    background: #ffffff;
+    width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: popIn 1s ease-out forwards;
+}
+
+/* Judul Profesional di Atas */
+.header-title h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #0984e3;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.line-animated {
+    height: 3px;
+    width: 50px;
+    background: #0984e3;
+    margin: 8px auto 20px auto;
+    border-radius: 2px;
+    animation: expandLine 1.5s infinite alternate;
+}
+
+/* Animasi Teks Nama */
+.nama-animasi {
+    margin: 5px 0;
+    color: #2d3436;
+    font-size: 24px;
+    animation: fadeInSlide 1.2s ease-out;
+}
+
+.profesi {
+    color: #0984e3;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: fadeInSlide 1.4s ease-out;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #dfe6e9;
+    margin: 20px 0;
+}
+
+/* Animasi Bagian-bagian Konten */
+.section {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.animated-section-1 { animation: fadeInSlide 1.6s ease-out; }
+.animated-section-2 { animation: fadeInSlide 1.8s ease-out; }
+.animated-section-3 { animation: fadeInSlide 2.0s ease-out; }
+
+.section h3 {
+    font-size: 15px;
+    color: #0984e3;
+    margin-bottom: 8px;
+}
+
+.section p, .section ul {
+    font-size: 14px;
+    color: #636e72;
+    margin: 0;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 5px;
+}
+
+/* Tag Keahlian / Skills */
+.skills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background: #eef5fc;
+    color: #0984e3;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #74b9ff;
+    transition: transform 0.3s;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+}
+
+/* Tombol Beranimasi */
+.footer-social {
+    margin-top: 25px;
+}
+
+.btn-animate {
+    display: inline-block;
+    background: #0984e3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(9, 132, 227, 0.4);
+}
+
+.btn-animate:hover {
+    background: #74b9ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(116, 185, 255, 0.6);
+}
+
+/* KEYFRAMES ANIMASI */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandLine {
+    0% {
+        width: 30px;
+    }
+    100% {
+        width: 80px;
+    }
+}
